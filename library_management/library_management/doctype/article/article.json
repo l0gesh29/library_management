@@ -1,4 +1,6 @@
 {
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
  "autoname": "field:article_name",
  "creation": "2021-08-17 22:16:50.149839",
  "doctype": "DocType",
@@ -6,12 +8,15 @@
  "engine": "InnoDB",
  "field_order": [
   "article_name",
-  "image",
   "author",
-  "description",
   "isbn",
+  "column_break_4",
   "status",
-  "publisher"
+  "route",
+  "publisher",
+  "image",
+  "section_break_8",
+  "description"
  ],
  "fields": [
   {
@@ -25,6 +30,7 @@
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Image"
   },
   {
@@ -52,9 +58,24 @@
    "fieldname": "publisher",
    "fieldtype": "Data",
    "label": "Publisher"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
- "modified": "2021-08-17 22:38:36.235263",
+ "has_web_view": 1,
+ "image_field": "image",
+ "modified": "2021-08-18 22:26:00.117079",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -71,10 +92,33 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library members",
+   "share": 1
   }
  ],
  "quick_entry": 1,
+ "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "article_name",
  "track_changes": 1
 }

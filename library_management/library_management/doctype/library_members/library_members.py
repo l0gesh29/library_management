@@ -4,7 +4,9 @@
 
 from __future__ import unicode_literals
 # import frappe
-from frappe.website.website_generator import WebsiteGenerator
+from frappe.model.document import Document
 
-class Article(WebsiteGenerator):
-	pass
+class Librarymembers(Document):
+	
+	def before_save(self):
+		self.full_name = f'{self.first_name} {self.last_name or ""}'
