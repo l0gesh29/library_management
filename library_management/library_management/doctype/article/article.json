@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:article_name",
@@ -75,7 +76,9 @@
  ],
  "has_web_view": 1,
  "image_field": "image",
- "modified": "2021-08-18 22:26:00.117079",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-19 00:57:11.364423",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -119,6 +122,5 @@
  "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "article_name",
  "track_changes": 1
 }
